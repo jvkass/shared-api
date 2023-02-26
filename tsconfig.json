@@ -1,24 +1,21 @@
 {
   "compilerOptions": {
-    "strict": true,
-    "module": "commonjs",
-    "declaration": true,
-    "removeComments": true,
-    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
-    "strictPropertyInitialization": false,
-    "target": "es2019",
+    "target": "es2017",
+    "module": "commonjs",
+    "lib": ["es2017", "es7", "es6"],
+    "declaration": true,
+    "declarationMap": true,
     "sourceMap": true,
-    "outDir": "./lib",
-    "baseUrl": "./",
-    "incremental": true,
-    "paths": {
-      "@src/*": ["src/*"],
-      "@modules/*": ["src/modules/*"],
-      "@config/*": ["src/infrastructure/configs/*"],
-      "@exceptions": ["src/libs/exceptions"],
-      "@libs/*": ["src/libs/*"]
-    }
-  }
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "test", "**/*spec.ts"]
 }
