@@ -40,6 +40,6 @@ lerna-debug.log*
 
 #docker data
 docker/data
+.npmrc
 
-vivae-firebase.json
 lib
