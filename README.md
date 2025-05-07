@@ -74,10 +74,6 @@ Nest is [MIT licensed](LICENSE).
 
 ## Publish package
 
-npm login --registry=https://npm.pkg.github.com
+npm login
 
-yarn build
-
-yarn prepublish
-
-npm publish
+npm run publish
