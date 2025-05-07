@@ -1,6 +1,6 @@
 {
   "name": "@jvkass/shared-api",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "author": "João Vitor Coelho",
   "license": "UNLICENSED",
@@ -9,6 +9,9 @@
   "scripts": {
     "build": "rimraf dist && tsc",
     "prepublish": "npm run build"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
     "@golevelup/ts-jest": "^0.3.3",
